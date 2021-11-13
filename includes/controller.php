@@ -126,6 +126,13 @@ elseif($do=='departments'){
     $siteKeywords=$info_description["keywords_".$lang_name];
     $siteImage=SITE_PATH.'/images/menus/'.$info_menu["image"];
 }
+elseif($do=='doctors'){
+    $info_menu=mysqli_fetch_assoc(mysqli_query($db,"select * from menus where link='hekimlerimiz'"));
+    $siteTitle=$info_menu["name_".$lang_name];
+    $siteDescription=substr_(decode_text($info_menu["text_".$lang_name],true,true),0,250);
+    $siteKeywords=$info_description["keywords_".$lang_name];
+    $siteImage=SITE_PATH.'/images/doctors/'.$info_menu["image"];
+}
 elseif($do=='comments'){
     $info_menu=mysqli_fetch_assoc(mysqli_query($db,"select * from menus where link='reyler'"));
     $siteTitle=$info_menu["name_".$lang_name];
@@ -143,6 +150,17 @@ elseif($do=='department'){
     $siteDescription=substr_(decode_text($info_department["full_text_".$lang_name],true,true),0,250);
     $siteKeywords=$info_description["keywords_".$lang_name];
     $siteImage=SITE_PATH.'/images/departments/'.$info_department["image"];
+}
+elseif($do=='doctor'){
+    $id=intval($_GET["id"]);
+    $info_menu=mysqli_fetch_assoc(mysqli_query($db,"select * from menus where link='hekimlerimiz' and active=1 "));
+    $info_doctor=mysqli_fetch_assoc(mysqli_query($db,"select * from doctors where id='$id' and active=1 "));
+    if(intval($info_menu["id"])==0 || intval($info_doctor['id'])==0) {header("Location: $site"); exit();}
+
+    $siteTitle=$info_menu["name_".$lang_name]." - ".$info_doctor["name_".$lang_name];
+    $siteDescription=substr_(decode_text($info_doctor["full_text_".$lang_name],true,true),0,250);
+    $siteKeywords=$info_description["keywords_".$lang_name];
+    $siteImage=SITE_PATH.'/images/doctors/'.$info_doctor["image"];
 }
 elseif($do=='contact'){
     $info_menu=mysqli_fetch_assoc(mysqli_query($db,"select * from menus where link='elaqe'"));
