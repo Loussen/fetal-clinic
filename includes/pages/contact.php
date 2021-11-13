@@ -9,9 +9,9 @@
 				<p><?=substr_($info_contacts['footer_'.$lang_name],0,200,true,true)?></p>
 				<div class="tm-sc-unordered-list list-style2">
 					<ul>
-						<li><strong>Phone:</strong> <a href="tel:<?=$info_contacts['phone']?>"><?=$info_contacts['phone']?></a></li>
-						<li><strong>Email:</strong> <a href="mailto:<?=$info_contacts['email']?>"><?=$info_contacts['email']?></a></li>
-						<li><strong>Address:</strong> <?=$info_contacts['text_'.$lang_name]?></li>
+						<li><strong><?=$lang6?>:</strong> <a href="tel:<?=$info_contacts['phone']?>"><?=$info_contacts['phone']?></a></li>
+						<li><strong><?=$lang51?>:</strong> <a href="mailto:<?=$info_contacts['email']?>"><?=$info_contacts['email']?></a></li>
+						<li><strong><?=$lang40?>:</strong> <?=$info_contacts['text_'.$lang_name]?></li>
 					</ul>
 				</div>
 				<ul class="styled-icons icon-dark icon-sm icon-circled mt-30">
@@ -73,12 +73,7 @@
 <div id="google_map" class="google_map">
 	<div class="map_container">
 		<div id="map">
-			<iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.829986131271!2d-122.4746968033092!3d37.80374752160443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey+Ave%2C+San+Francisco%2C+CA+94129!5e0!3m2!1sen!2sus!4v1435826432051" height="400"></iframe>
+			<iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1518.940611555354!2d49.838624341866684!3d40.41148199560543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40308752799532e5%3A0xc3bb3031e114bd27!2sFetal%20M%C9%99rk%C9%99z%20NS%20Genetics!5e0!3m2!1sen!2s!4v1636824425303!5m2!1sen!2s" height="400"></iframe>
 		</div>
 	</div>
-</div>
-
-<div class="title-header">
-	<h3><?=$lang28?></h3>
-	<h2 class="title"><?=$lang29?></h2>
 </div>
