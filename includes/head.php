@@ -10,11 +10,10 @@
 <title><?=$siteTitle?></title>
 
 <!-- Favicon and Touch Icons -->
-<link href="<?=SITE_PATH?>/assets/images/favicon.png" rel="shortcut icon" type="image/png">
-<link href="<?=SITE_PATH?>/assets/images/apple-touch-icon.png" rel="apple-touch-icon">
-<link href="<?=SITE_PATH?>/assets/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-<link href="<?=SITE_PATH?>/assets/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-<link href="<?=SITE_PATH?>/assets/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link rel="apple-touch-icon" sizes="180x180" href="<?=SITE_PATH?>/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?=SITE_PATH?>/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?=SITE_PATH?>/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="<?=SITE_PATH?>/assets/favicon/site.webmanifest">
 
 <!-- Stylesheet -->
 <link href="<?=SITE_PATH?>/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
