@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Fetal temp" uploadOnCheckin="b9c3e65f-7ec7-4eeb-9329-be92f13272e5">
+    <serverData>
+      <paths name="Fetal temp">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="Fetal temp" />
+  </component>
+</project>

@@ -15,7 +15,9 @@
             <tr>
                 <th>Göndərən</th>
                 <th>E-mail</th>
+                <th>Başlıq</th>
                 <th>Mətn</th>
+                <th>Telefon</th>
                 <th>Tarix</th>
             </tr>
         </thead>
@@ -23,7 +25,9 @@
             <tr>
                 <td><?php echo $information["name"]; ?></td>
                 <td><?php echo $information["email"]; ?></td>
+                <td><?php echo $information["subject"]; ?></td>
                 <td><?php echo $information["message"]; ?></td>
+                <td><?php echo $information["phone"]; ?></td>
                 <td><?php echo $information["datetime"]; ?></td>
             </tr>
         </tbody>

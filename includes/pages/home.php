@@ -10,8 +10,8 @@
 					<rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="industrivo-rev-slider-2" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 						<rs-module id="rev_slider_1_1" style="display:none;" data-version="6.1.7">
 							<rs-slides>
-								<rs-slide data-key="rs-9" data-title="Slide 1" data-thumb="http://placehold.it/1920x1280" data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
-									<img src="http://placehold.it/1920x1280" title="slide1" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
+								<rs-slide data-key="rs-9" data-title="Slide 1" data-thumb="<?=SITE_PATH?>/assets/images/biokimya_labaratoriyasi.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
+									<img src="<?=SITE_PATH?>/assets/images/biokimya_labaratoriyasi.jpg" title="Biokimya labaratoriyasi" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
 									<rs-layer
 											id="slider-4-slide-9-layer-18"
 											data-type="text"
@@ -61,8 +61,8 @@
 									>
 									</rs-layer>
 								</rs-slide>
-								<rs-slide data-key="rs-13" data-title="Slide 1" data-thumb="http://placehold.it/1920x1280" data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
-									<img src="http://placehold.it/1920x1280" title="slide2" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
+								<rs-slide data-key="rs-13" data-title="Slide 1" data-thumb="<?=SITE_PATH?>/assets/images/sitogenetika_genetik_xestelikler.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
+									<img src="<?=SITE_PATH?>/assets/images/sitogenetika_genetik_xestelikler.jpg" title="Sitogenetika genetik xestelikler" width="1920" height="1280" data-parallax="off" class="rev-slidebg" data-no-retina>
 									<rs-layer
 											id="slider-4-slide-13-layer-18"
 											data-type="text"
@@ -282,6 +282,11 @@
 							<?php
                         }
 					?>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12">
+				<div class="tm-sc-button text-center mt-10 d-none d-md-block d-sm-none mt-md-15">
+					<a href="<?=SITE_PATH?>/departamentler" target="_self" class="btn tm-mediku-btn text-white btn-theme-colored1"><?=$lang57?></a>
 				</div>
 			</div>
 		</div>

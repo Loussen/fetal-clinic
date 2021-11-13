@@ -40,49 +40,70 @@
 			<div class="row justify-content-end">
 				<div class="col-lg-8 col-xl-7">
 					<div class="appointment-current-theme-style">
-						<div class="tm-sc-section-title section-title mb-0">
+						<div class="tm-sc-section-title section-title mb-0" id="appointment_title">
 							<div class="title-wrapper">
-								<h6 class="subtitle text-theme-colored1 text-uppercase">Fill the form</h6>
-								<h2 class="title mb-40">Make an Appointment <span class="text-theme-colored3">Today</span></h2>
+								<h6 class="appointment_title_up subtitle text-theme-colored1 text-uppercase"><?=$lang10?></h6>
+								<h2 class="appointment_title_down title mb-40"><?=$lang1?></h2>
 							</div>
 						</div>
 						<!-- Contact Form -->
-						<form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+						<div class="alert alert-success success_appointment" style="display: none;"><?=$lang2?></div>
+						<div class="alert alert-warning error_appointment" style="display: none;"><?=$lang3?></div>
+						<form id="appointment-form" class="appointment-form" name="appointment-form">
 							<div class="form-row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<input name="form_name" class="form-control" type="text" placeholder="Your Name">
+										<label><?=$lang4?> <small>*</small></label>
+										<input name="name" class="form-control" required="required"  type="text" placeholder="<?=$lang4?>">
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<input name="form_email" class="form-control required email" type="email" placeholder="Email Address">
+										<label><?=$lang51?></label>
+										<input name="email" class="form-control email" type="email" placeholder="<?=$lang51?>">
 									</div>
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<input name="form_phone" class="form-control" type="text" placeholder="Phone Number">
+										<label><?=$lang52?></label>
+										<input name="subject" class="form-control" type="text" placeholder="<?=$lang52?>">
 									</div>
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<input name="form_subject" class="form-control required" type="text" placeholder="Subject">
+										<label><?=$lang6?> <small>*</small></label>
+										<input name="phone" class="form-control" required="required" type="text" placeholder="<?=$lang6?>">
 									</div>
 								</div>
 							</div>
 							<div class="form-row">
-								<div class="col-sm-12">
-									<div class="form-group mb-0">
-										<textarea name="form_message" class="form-control required" rows="7" placeholder="Write a Message"></textarea>
-									</div>
+								<div class="col-sm-6">
 									<div class="form-group">
-										<input name="form_botcheck" class="form-control" type="hidden" value="" />
-										<button type="submit" class="btn btn-flat btn-theme-colored1 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait...">Submit</button>
-										<button type="reset" class="btn btn-flat btn-theme-colored3 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Reset</button>
+										<label><?=$lang56?> <small>*</small></label>
+										<select class="form-control" name="appointment_type" required="required">
+											<option value=""><?=$lang56?></option>
+											<option value="1"><?=$lang54?></option>
+											<option value="2"><?=$lang55?></option>
+										</select>
 									</div>
 								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label>&nbsp;</label>
+										<select class="form-control checkup_type" disabled="disabled" name="checkup_type" required="required">
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label><?=$lang12?> <small>*</small></label>
+								<textarea name="message" class="form-control" required="required" rows="5" minlength="5" placeholder="<?=$lang12?>"></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-flat btn-theme-colored1 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait..."><?=$lang7?></button>
+								<button type="reset" class="btn btn-flat btn-theme-colored3 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px"><?=$lang53?></button>
 							</div>
 						</form>
 						<!-- Contact Form Validation-->
@@ -117,7 +138,7 @@
 		</div>
 	</div>
 	<div class="layer-image-wrapper layer-image-divider2">
-		<div class="layer-image-left" data-tm-bg-img="http://placehold.it/832x666" style="background-image: url(&quot;http://placehold.it/832x666&quot;);">
+		<div class="layer-image-left" data-tm-bg-img="<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.jpg" style="background-image: url(<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.jpg);">
 			<div class="projects-count bg-theme-colored2">
 				<div class="wrapper">
 					<div class="details">

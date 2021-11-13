@@ -1,13 +1,13 @@
 <?php
 include "admin_gt7751/pages/__includes/config.php";
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+//use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\SMTP;
+//use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
-require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require 'vendor/phpmailer/phpmailer/src/SMTP.php';
-require 'vendor/phpmailer/phpmailer/src/Exception.php';
+//require 'vendor/autoload.php';
+//require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+//require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+//require 'vendor/phpmailer/phpmailer/src/Exception.php';
 
 $response = json_encode(array("code"=>0, "content" => "Error system", "err_param" => ''));
 
@@ -18,14 +18,14 @@ if($_POST)
 
     if(strlen($name)<2)
         $response = json_encode(array("code"=>0, "content" => "Error name", "err_param" => 'name'));
-    elseif(strlen($email)<4 || !filter_var($email, FILTER_VALIDATE_EMAIL))
-        $response = json_encode(array("code"=>0, "content" => "Error email", "err_param" => 'email'));
-    elseif(strlen($message)<4)
-        $response = json_encode(array("code"=>0, "content" => "Error message", "err_param" => 'message'));
+    elseif(strlen($phone)<4 || !filter_var($phone, FILTER_SANITIZE_NUMBER_INT))
+        $response = json_encode(array("code"=>0, "content" => "Error phone", "err_param" => 'phone'));
+    elseif(strlen($message)<10)
+        $response = json_encode(array("code"=>0, "content" => "Error mesagge", "err_param" => 'message'));
     else
     {
         //Create a new PHPMailer instance
-        $mail = new PHPMailer();                              // Passing `true` enables exceptions
+//        $mail = new PHPMailer();                              // Passing `true` enables exceptions
         try {
 
             //Server settings

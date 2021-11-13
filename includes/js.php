@@ -9,7 +9,33 @@
 <script>
 jQuery(document).ready(function(){
     var base_url = '<?=SITE_PATH?>';
-    $(document).on('submit','form#contact-form',function(e){
+
+    $("select[name=appointment_type]").on('change', function () {
+        let selectedItem = $(this).val();
+        let ddlStates = $(".checkup_type"); // will be update after success ajax call
+	    ddlStates.prop('disabled',true);
+        ddlStates.html('');
+        $.ajax({     // get states/towns from db from controller
+            type: 'POST',
+            data: { "appointment_type" : selectedItem},
+            dataType: 'json',
+            url: base_url+'/checkup.php',
+            success: function (data) {
+                if(data.code === 1)
+                {
+                    $.each(data.content, function (id, option) {
+                        ddlStates.append($('<option></option>').val(option.id).html(option.name));
+                    });  // populating result
+                    ddlStates.prop('disabled',false);
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert('Failed to retrieve states.');
+            }
+        });
+    });
+
+    $(document).on('submit','form#contact_form',function(e){
         e.preventDefault();
 
         $('#contact-form').css('opacity','0.3');
@@ -28,12 +54,12 @@ jQuery(document).ready(function(){
             success: function (data, textStatus, jqXHR) {
                 if(data.code==0)
                 {
-                    $('#contact-form').css('opacity','1');
+                    $('#contact_form').css('opacity','1');
                     $('[name="'+data.err_param+'"]').addClass('has-error');
                 }
                 else
                 {
-                    $("form#contact-form").css("display","none");
+                    $("form#contact_form").css("display","none");
                     $('div.success_contact').show();
                 }
             },
@@ -44,7 +70,7 @@ jQuery(document).ready(function(){
 
     });
 
-    $(document).on('submit','form#appointment-form',function(e){
+    $('div.appointment-current-theme-style').on('submit','form#appointment-form',function(e){
         e.preventDefault();
 
         $('#appointment-form').css('opacity','0.3');
@@ -70,7 +96,12 @@ jQuery(document).ready(function(){
                 {
                     $("form#appointment-form").css("display","none");
                     $('div.success_appointment').show();
+                    $('h2.appointment_title_down').hide();
                 }
+
+                $('html, body').animate({
+                    scrollTop: $("#appointment_title").offset().top
+                }, 500);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $('#appointment-form').css('opacity','1');

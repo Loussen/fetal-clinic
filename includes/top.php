@@ -28,8 +28,8 @@
 						</ul>
 					</div>
 					<div class="element pt-0 pt-lg-10 pb-0">
-						<a href="<?= SITE_PATH ?>/elaqe"
-						   class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup"><?= $lang10 ?></a>
+						<a href="#appointment_title"
+						   class="btn btn-theme-colored2 btn-flat btn-sm"><?= $lang10 ?></a>
 					</div>
 				</div>
 			</div>
@@ -42,10 +42,10 @@
 					<div class="row header-nav-col-row">
 						<div class="col-sm-auto align-self-center">
 							<a class="menuzord-brand site-brand" href="<?= SITE_PATH ?>"> <img
-										class="logo-default logo-1x" src="<?= SITE_PATH ?>/assets/images/logo-wide.png"
+										class="logo-default logo-1x" src="<?= SITE_PATH ?>/assets/images/Fetal_Mərkəz_NS_Genetics_klinikasi_logo.png"
 										alt="<?= $info_description['title_' . $lang_name] ?>"> <img
 										class="logo-default logo-2x retina"
-										src="<?= SITE_PATH ?>/assets/images/logo-wide@2x.png"
+										src="<?= SITE_PATH ?>/assets/images/Fetal_Mərkəz_NS_Genetics_klinikasi_logo.png"
 										alt="<?= $info_description['title_' . $lang_name] ?>"> </a>
 						</div>
 						<div class="col-sm-auto ml-auto pr-0 align-self-center">
