@@ -33,6 +33,9 @@
 <link href="<?=SITE_PATH?>/assets/css/animate.min.css" rel="stylesheet" type="text/css">
 <link href="<?=SITE_PATH?>/assets/css/javascript-plugins-bundle.css" rel="stylesheet"/>
 
+<!-- Slick slider style -->
+<link href="<?=SITE_PATH?>/assets/css/slick.css" rel="stylesheet"/>
+
 <!-- CSS | menuzord megamenu skins -->
 <link href="<?=SITE_PATH?>/assets/js/menuzord/css/menuzord.css" rel="stylesheet"/>
 
@@ -47,18 +50,4 @@
 <!-- CSS | Theme Color -->
 <link href="<?=SITE_PATH?>/assets/css/colors/theme-skin-color-set1.css" rel="stylesheet" type="text/css">
 
-<!-- external javascripts -->
-<script src="<?=SITE_PATH?>/assets/js/jquery.js"></script>
-<script src="<?=SITE_PATH?>/assets/js/popper.min.js"></script>
-<script src="<?=SITE_PATH?>/assets/js/bootstrap.min.js"></script>
-<script src="<?=SITE_PATH?>/assets/js/javascript-plugins-bundle.js"></script>
-<script src="<?=SITE_PATH?>/assets/js/menuzord/js/menuzord.js"></script>
 
-<!-- REVOLUTION STYLE SHEETS -->
-<link rel="stylesheet" type="text/css" href="<?=SITE_PATH?>/assets/js/revolution-slider/css/rs6.css">
-<link rel="stylesheet" type="text/css" href="<?=SITE_PATH?>/assets/js/revolution-slider/extra-rev-slider1.css">
-<!-- REVOLUTION LAYERS STYLES -->
-<!-- REVOLUTION JS FILES -->
-<script src="<?=SITE_PATH?>/assets/js/revolution-slider/js/revolution.tools.min.js"></script>
-<script src="<?=SITE_PATH?>/assets/js/revolution-slider/js/rs6.min.js"></script>
-<script src="<?=SITE_PATH?>/assets/js/revolution-slider/extra-rev-slider1.js"></script>

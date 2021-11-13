@@ -1,6 +1,23 @@
 <?php if(!defined('db_name')) { header("Location: ../"); exit(); die(); } ?>
 
 <!-- Javascript -->
+<!-- external javascripts -->
+<script src="<?=SITE_PATH?>/assets/js/jquery.js"></script>
+<script src="<?=SITE_PATH?>/assets/js/popper.min.js"></script>
+<script src="<?=SITE_PATH?>/assets/js/bootstrap.min.js"></script>
+<script src="<?=SITE_PATH?>/assets/js/javascript-plugins-bundle.js"></script>
+<script src="<?=SITE_PATH?>/assets/js/menuzord/js/menuzord.js"></script>
+<!-- Slick slider JS-->
+<script src="<?=SITE_PATH?>/assets/js/slick.min.js"></script>
+<!-- REVOLUTION STYLE SHEETS -->
+<link rel="stylesheet" type="text/css" href="<?=SITE_PATH?>/assets/js/revolution-slider/css/rs6.css">
+<link rel="stylesheet" type="text/css" href="<?=SITE_PATH?>/assets/js/revolution-slider/extra-rev-slider1.css">
+<!-- REVOLUTION LAYERS STYLES -->
+<!-- REVOLUTION JS FILES -->
+<script src="<?=SITE_PATH?>/assets/js/revolution-slider/js/revolution.tools.min.js"></script>
+<script src="<?=SITE_PATH?>/assets/js/revolution-slider/js/rs6.min.js"></script>
+<script src="<?=SITE_PATH?>/assets/js/revolution-slider/extra-rev-slider1.js"></script>
+
 <script src="<?=SITE_PATH?>/assets/js/custom.js"></script>
 
 
@@ -121,5 +138,49 @@ jQuery(document).ready(function(){
             $(this).closest("div.youtube-video-place").html('<iframe allowfullscreen frameborder="0" class="embed-responsive-item" style="height: 225px; width: 100%;" src="' + $(this).closest("div.youtube-video-place").data('yt-url') + '"></iframe>');
         });
     }
+
+    /*------------------------------------------------------------------------------*/
+    /* Slick_slider
+    /*------------------------------------------------------------------------------*/
+    $(".slick_slider").slick({
+        speed: 1000,
+        infinite: true,
+        arrows: false,
+        dots: false,
+        autoplay: false,
+        centerMode : false,
+
+        responsive: [{
+
+            breakpoint: 1360,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+            {
+
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+    });
 });
 </script>

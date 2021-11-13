@@ -20,7 +20,7 @@
 		<div class="section-content">
 			<div class="row">
                 <?php
-                $limit = 6;
+                $limit = 8;
                 if (isset($_GET["page"])) $page = intval($_GET["page"]); else $page = 1;
                 $max_data = mysqli_num_rows(mysqli_query($db, "select id from doctors where active='1'"));
                 $max_page = ceil($max_data / $limit);

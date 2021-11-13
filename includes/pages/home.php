@@ -427,9 +427,9 @@
 				</div>
 			</div>
 			<div class="section-content">
-				<div class="row">
+				<div class="slick_slider row" data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "arrows":true, "autoplay":true, "infinite":true, "responsive": [{"breakpoint":1200,"settings":{"slidesToShow": 4}}, {"breakpoint":1024,"settings":{"slidesToShow": 4}}, {"breakpoint":777,"settings":{"slidesToShow": 3}}, {"breakpoint":575,"settings":{"slidesToShow": 2}}]}'>
 					<?php
-                    $sql_doctors=mysqli_query($db,"select * from doctors where active=1 order by position desc LIMIT 4");
+                    $sql_doctors=mysqli_query($db,"select * from doctors where active=1 order by position desc");
 
                     while($row_doctors = mysqli_fetch_assoc($sql_doctors))
                     {
