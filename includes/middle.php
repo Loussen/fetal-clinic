@@ -138,7 +138,7 @@
 		</div>
 	</div>
 	<div class="layer-image-wrapper layer-image-divider2">
-		<div class="layer-image-left" data-tm-bg-img="<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.jpg" style="background-image: url(<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.jpg);">
+		<div class="layer-image-left" data-tm-bg-img="<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.png" style="background-image: url(<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.jpg);">
 			<div class="projects-count bg-theme-colored2">
 				<div class="wrapper">
 					<div class="details">
