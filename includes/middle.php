@@ -112,23 +112,23 @@
 		</div>
 	</div>
 	<div class="layer-image-wrapper layer-image-divider2">
-		<div class="layer-image-left" data-tm-bg-img="<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.png" style="background-image: url(<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.jpg);">
-			<div class="projects-count bg-theme-colored2">
-				<div class="wrapper">
-					<div class="details">
-						<h4 class="text-white">The majority have suffered</h4>
-						<div class="icon"><img src="<?=SITE_PATH?>/assets/images/icon/11.png" alt="ImageIcon"></div>
-					</div>
-					<div class="video-icon">
-						<div class="box-hover-effect play-video-button tm-sc tm-sc-video-popup">
-							<div class="effect-wrapper text-center ml-30 ml-md-20 mt-10">
-								<div class="video-button text-white font-size-60"><span class="far fa-play-circle"></span></div>
-								<a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?time_continue=2&amp;v=XJgNuWtCEAI" title=""></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="layer-image-left" data-tm-bg-img="<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.png" style="background-image: url(<?=SITE_PATH?>/assets/images/Fetal_merkez_ns_genetics_klinikasi.jpg); width: 666px;">
+<!--			<div class="projects-count bg-theme-colored2">-->
+<!--				<div class="wrapper">-->
+<!--					<div class="details">-->
+<!--						<h4 class="text-white">The majority have suffered</h4>-->
+<!--						<div class="icon"><img src="--><?//=SITE_PATH?><!--/assets/images/icon/11.png" alt="ImageIcon"></div>-->
+<!--					</div>-->
+<!--					<div class="video-icon">-->
+<!--						<div class="box-hover-effect play-video-button tm-sc tm-sc-video-popup">-->
+<!--							<div class="effect-wrapper text-center ml-30 ml-md-20 mt-10">-->
+<!--								<div class="video-button text-white font-size-60"><span class="far fa-play-circle"></span></div>-->
+<!--								<a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?time_continue=2&amp;v=XJgNuWtCEAI" title=""></a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
 		</div>
 	</div>
 </section>
